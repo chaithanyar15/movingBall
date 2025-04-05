@@ -1,0 +1,55 @@
+<html>
+ <head>
+     <title>Animation of ball </title>
+     <style>
+          h2{
+             color: white;
+             background-color: #24241c;
+             font-style: italic;
+             font-size: 50px;
+          }
+          .container{
+              height : 500px;
+              width : 800px;
+              border : 6px solid black;
+              margin: 20px;
+              background-color:pink;
+              position: absolute;
+              top: 80px;
+              left: 200px;
+           }
+           .ball{
+                height: 200px;
+                width: 200px;
+                border: 3px solid black;
+                border-radius:50%;
+                background-image: conic-gradient(orange,orange 45deg,green 45deg,green 90deg,blue 90deg , blue 135deg, #a3a33e 135deg, #a3a33e 180deg,
+                                                purple 180deg, purple 225deg, yellow 225deg , yellow 270deg , indigo 270deg , indigo 315deg ,
+                                                grey 315deg , grey 360deg);
+                animation-name: movingBall;
+                animation-duration: 5s;
+                animation-timing-function : linear;
+                animation-delay : 0s;
+                animation-iteration-count : infinite;
+                animation-direction:alternate;
+                position: absolute;
+           }
+          @keyframes movingBall{
+           from{ top: 0px;
+            left: 300px;
+            }
+            to{
+                top: 300px;
+                left: 300px;
+           }
+         }
+     </style>
+ </head>
+
+ <body>
+    <center> <h2> Animation using key frames </h2> </center>
+     <div class="container">
+         <div class="ball"> <div>
+     </div>
+ </body>
+</html>
